@@ -1,0 +1,29 @@
+body {
+    background-image: url("image.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+{
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    font-size: 48px;
+    
+}
+p, h1{
+    max-width: 2000px;
+        margin: 0 auto;
+    text-align: center;
+    
+}
+
+#quote{
+
+ font-weight: bold;
+  color: #fff;
+  font-size: 34px;
+    
+}

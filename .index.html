@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Title</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <style></style>
+
+  
+  
+</head>
+
+<body>
+    <H1>Quote of the day</H1>
+    <p id="quote"></p>
+    <p id="cat"></p>
+    
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    
+    <script>
+    
+    $.ajax({
+        url: "http://fvi-grad.com:4004/quote",
+        success: function(resp, servertxtstatus, xhr){
+        console.log(resp);
+            $("#quote").html(resp.quote);
+            $("#cat").html(resp.author);
+            
+    }
+     });
+    
+    
+  </script>
+</body>
+</html>
